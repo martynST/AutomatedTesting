@@ -14,6 +14,23 @@ public class Draggable extends Navigation{
     private WebElement Events;
     @FindBy(id = "io-id-5")
     private WebElement dragSort;
+    @FindBy(id = "draggabl")
+    private WebElement constrainedDrag1;
+    @FindBy(id = "draggabl2")
+    private WebElement constrainedDrag2;
+    @FindBy(id = "draggabl3")
+    private WebElement constrainedDrag3;
+    @FindBy(id = "drag")
+    private WebElement centerDrag;
+    @FindBy(id = "drag2")
+    private WebElement offsetDrag;
+    @FindBy(id = "drag3")
+    private WebElement bottomDrag;
+    @FindBy(id = "containment-wrapper")
+    private WebElement container;
+    @FindBy(id = "inside_contain")
+    private WebElement insideContainer;
+
 
     public void gotoDragSort() {
         dragSort.click();
@@ -37,5 +54,37 @@ public class Draggable extends Navigation{
 
     public WebElement getDraggable() {
         return draggable;
+    }
+
+    public WebElement getConstrainedDrag1() {
+        return constrainedDrag1;
+    }
+
+    public WebElement getConstrainedDrag2() {
+        return constrainedDrag2;
+    }
+
+    public WebElement getConstrainedDrag3() {
+        return constrainedDrag3;
+    }
+
+    public WebElement getContainer() {
+        return container;
+    }
+
+    public WebElement getCenterDrag() {
+        return centerDrag;
+    }
+
+    public WebElement getOffsetDrag() {
+        return offsetDrag;
+    }
+
+    public WebElement getBottomDrag() {
+        return bottomDrag;
+    }
+
+    public WebElement getInsideContainer() {
+        return insideContainer;
     }
 }
